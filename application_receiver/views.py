@@ -10,9 +10,9 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
 
-from dotenv import load_dotenv
+# from dotenv import load_dotenv # Development
 
-load_dotenv()
+# load_dotenv() # Development
 
 
 @csrf_exempt
