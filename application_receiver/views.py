@@ -32,7 +32,7 @@ def receviver(req):
         email = req.POST.get("email")
         phone = req.POST.get("phone")
         resume = req.FILES.get("resume")
-        time = req.POST.get("time")
+        date = req.POST.get("time")
         division = req.POST.get("division")
 
         msg = MIMEMultipart()
@@ -47,7 +47,7 @@ def receviver(req):
         Email: {email}
         Phone: {phone}
         Job ID: {jobid}
-        Time: {time}
+        Date: {date}
         """
         msg.attach(MIMEText(body, "plain"))
 
